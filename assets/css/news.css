@@ -1,0 +1,124 @@
+.news{
+    padding: 5rem 0;
+}
+.d-b{
+    display: block;
+}
+.news a{
+    color: #313131;
+}
+/* .main_post-link{
+    background-color: red;;
+} */
+
+.main_title h3{
+    color: #fff;
+    font-size: 4rem;
+}
+.main_image img{
+    border-radius: .4rem;
+    transition: all .1s ease-in;
+}
+.data{
+    letter-spacing: 2px;
+}
+.main_data{
+    margin-bottom: 1rem;
+}
+.main_description{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.main_extra .extra{
+    font-size: 1.2rem;
+}
+.main_image{
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.main_title{
+    position: absolute;
+    right: 100%;
+    top: 30%;
+    width: 30%;
+    transition: all .3s ease-in-out;
+}
+.main_title h3{
+    color: #fff;
+}
+.main_post:hover .main_image img{
+    filter: brightness(60%) blur(2px);
+}
+.main_post:hover .main_title{
+    right: 35%;
+}
+
+.other_posts{
+    padding: 6rem 0;
+}
+.other_news{
+    padding: 2rem 0 4rem 0;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all .1s linear;
+    
+}
+.other_news::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: linear-gradient(to right, 
+        rgba(235,202,19,1) 0%,
+        rgba(171,87,151,1) 40%,
+        rgba(171,87,151,1) 60%,
+        rgba(235,202,19,1) 100%
+    );
+    background-size: 300%;
+    transition: all .2s linear;
+    animation: animate-position 2s linear infinite normal;
+}
+.other_news:hover::before{
+    width: 100%;
+}
+.other_news:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 8px -12px rgba(0,0,0,0.4);
+}
+.other_news:hover .other_extra .extra{
+    text-decoration: underline;
+ 
+}
+.other_row{
+    display: flex;
+    column-gap: 20px;
+}
+.col-4{
+    flex-basis: 25%;
+}
+.col-8{
+    flex-basis: 75%;
+}
+.other_item{
+    display: flex;
+}
+.other_info{
+    display: flex;
+    flex-direction: column;
+}
+.other_data{
+    margin-bottom: 20px;
+}
+.other_description{
+    font-size: 1.2rem;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.extra{
+    font-size: 1.2rem;
+}
